@@ -1,0 +1,79 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Montserrat", sans-serif;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+    :root {
+        --normal-font-size: 1rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--white-color);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+/* Container */
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+/* Button Design 1 */
+.btn-color-1 {
+    margin: 10px 0 10px 0;
+    padding: 10px 20px;
+    background-color: #F4F4F4;
+    border: 2px solid;
+    border-color: #D9D9D9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+    font-weight: var(--font-medium);
+    font-family: var(--body-font);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-color-1:hover{
+    background-color: #e8e8e8;
+    border: 2px solid;
+    border-color: #D9D9D9;
+    color: black;
+    transform: translateX(5px);
+}

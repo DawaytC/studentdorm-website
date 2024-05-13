@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="/Pages/main.css">
+      <link rel="stylesheet" href="navigationBar.css">
+      <!--=============== TABICON ===============-->
+      <link rel="shortcut icon" type="UniResidence icon" href="/Assets/UniResidenceLogoIcon-coloured.png">
+      <title>NavigationBar</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html">
+               <img class="nav__logo" src="/Assets/UniResidenceLogoLandscape-white.svg" alt="logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="listings.html" class="nav__link">
+                        <span>Listings</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">
+                        <span>About us</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item nav__item--mobile-only">
+                    <a href="review.html" class="nav__link">
+                       <span>Review A Dorm</span>
+                    </a>
+                 </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+               <a class="cta" href="review.html">
+                  <button class="nav__cta">Review A Dorm</button>
+               </a>
+
+               <div class="nav__social">
+                  <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://facebook.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-facebook-line"></i>
+                  </a>
+
+                  <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-mail-line"></i>
+                  </a>
+               </div>
+
+               <div class="nav__social-link" id="nav-footer">
+                <p>Copyright © 2024 UniResidence. <br> All Right Reserved. </p>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="navigationBar.js"></script>
+   </body>
+</html>
