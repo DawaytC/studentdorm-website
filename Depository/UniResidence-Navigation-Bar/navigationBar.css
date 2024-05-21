@@ -49,21 +49,6 @@ body {
   background-color: var(--white-color);
 }
 
-      .section_about_text {
-        padding: 20px 20px; /* Adjust the padding as needed */
-        max-width: 1120px;
-        height: auto;
-        margin: 0 auto;
-        background-color: lightgreen;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-      }
-
-      section {
-        background-color: red;
-      }
-
 ul {
   list-style: none;
 }
@@ -103,7 +88,7 @@ a {
   cursor: pointer;
 }
 
-.nav__close, 
+.nav__close,
 .nav__toggle {
   display: flex;
   color: var(--white-color);
@@ -142,31 +127,6 @@ a {
     display: none;
   }
 }
-
-      /* Button Design */
-
-      .btn-color-1 {
-        margin: 10px 0 10px 0;
-        padding: 10px 20px;
-        background-color: #F4F4F4;
-        border: 2px solid;
-        border-color: #D9D9D9;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        color: black;
-        font-weight: var(--font-medium);
-        font-family: var(--body-font);
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .btn-color-1:hover{
-        background-color: #e8e8e8;
-        border: 2px solid;
-        border-color: #D9D9D9;
-        color: black;
-        transform: translateX(5px);
-      }
 
 
 /* Navigation for mobile devices */
