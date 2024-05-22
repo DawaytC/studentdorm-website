@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    margin: auto;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.auth-buttons button {
+    margin: 0 5px;
+}
+
+.hero {
+    background: #eee;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.search-container {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input,
+.search-container select,
+.search-container button {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.new-listings,
+.testimonials,
+.university-dormitories,
+.featured-university-dorms,
+.reviewed-universities,
+.call-to-action {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.featured-residence {
+    position: relative;
+    color: #fff;
+}
+
+.featured-residence img {
+    width: 100%;
+    height: auto;
+}
+
+.residence-details {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.dorm {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    padding: 20px;
+    background: #f8f8f8;
+    text-align: left;
+}
+
+.university-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.university-logos img {
+    max-width: 100px;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}

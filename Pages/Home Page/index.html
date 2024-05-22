@@ -90,19 +90,74 @@
 
     <!--==================== MAIN ====================-->
     <main>
+        
+        <section class="home" id="home">
+         <div class="section_content">
+             <div class="section_about_text">
+                 <p class="section_text_title_p1"></p>
+                 <h1 class="about-title">Discover new dorms faster than ever.</h1>
+                 <span class="section_about_text_p1">
+                     Find apartments for rent that fit your timeline
+                     and your budget in the most convenient manner possible!
+                 </span>
+             </div>
+             <div class="section_about_photo">
+               <div class="carousel">
+                   <div class="carousel-inner">
+                       <img src="/Assets/christopher-jolly-GqbU78bdJFM-unsplash.jpg" class="hero" alt="herosection1">
+                       <img src="/Assets/gabriel-beaudry-WuQME0I_oZA-unsplash.jpg" class="hero" alt="herosection2">
+                       <img src="/Assets/norbert-levajsics-oTJ92KUXHls-unsplash.jpg" class="hero" alt="herosection3">
+                   </div>
+                   <button class="prev"></button>
+                   <button class="next"></button>
+               </div>
+           </div>
+         </div>
+     </section>
 
-        <!-- Example section -->
-        <!-- please use the name of the classes so that we can have the same designs -->
-        <section class="about" id="abouts">
-            <div class="section_about_text">
-                <p class="section_text_title_p1"></p>
-                <h1 class="about-title">Discover new dorms faster than ever.</h1>
-                <span class="section_about_text_p1">
-                    Find apartments for rent that fit your timeline and your budget in the most convenient manner possible!
-                </span>
-                </div>
-            </div>
-        </section>        
+      <div class="containerFields">
+         <H1>Look Apartments Nearby </H1>
+         <div class="search-section">
+             <input type="text" id="university" class="search-field" placeholder="Enter a college or university...">
+             <select id="property-type" class="search-field">
+                 <option value="">Property type</option>
+                 <option value="in-campus">In-campus</option>
+                 <option value="off-campus">Off-campus</option>
+             </select>
+             <select id="rooms-guests" class="search-field">
+                 <option value="">Rooms & Guests</option>
+                 <option value="1-1">1 - 1</option>
+                 <option value="2-2">2 - 2</option>
+                 <option value="3-3">3 - 3</option>
+             </select>
+             <button class="search-button" onclick="window.location.href='listings.html'">
+               <i class="ri-arrow-right-line"></i>
+            </button>
+         </div>
+     </div>
+
+     <section class="featureBanner">
+      <div class="section_featured_content">
+         <p class="title-heading">RM 450 / per month </p>
+         <H1 class="about-title">
+            Kemah Tinggi
+            <i class="ri-arrow-right-line"></i>
+         </H1>
+         <p class="location"><a href="https://www.google.com/maps/place/Villa+Bali+Kemah+Tinggi/@-8.6427209,115.111918,15z/data=!4m2!3m1!1s0x0:0x3eda740057f82065?sa=X&ved=1t:2428&ictx=111"  target="_blank">
+            43300 Seri Kembangan, Selangor
+            <i class="ri-arrow-right-up-line"></i>
+         </a></p>
+         
+         <div class="ratings">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <u class="reviews">80 Reviews</u>
+         </div>
+      </div>
+     </section>
 
         <!-- FOOTER -->
         <footer>
@@ -151,7 +206,7 @@
     </main>
 
     <!--=============== EDIT: YOUR OWN LOCALE JS ===============-->
-    <script src="#"></script>
+    <script src="/Pages/Home Page/homePage.js"></script>
     <!--=============== MAIN JS ===============-->
     <script src="/Depository/UniResidence-Navigation-Bar/navigationBar.js"></script>
 </body>
