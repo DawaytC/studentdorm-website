@@ -98,8 +98,9 @@ a {
 
 /* CTA DESIGN */
 .nav__cta {
-  padding: 10px 20px;
+  padding: 10px 16px;
   background-color: rgba(0, 136, 169, 1);
+  font-size: 14px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -317,6 +318,6 @@ a {
   .nav__menu {
     display: flex;
     align-items: center;
-    column-gap: 3.5rem;
+    column-gap: 2.5rem;
   }
 }

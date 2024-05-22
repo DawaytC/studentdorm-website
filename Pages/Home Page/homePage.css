@@ -1,17 +1,24 @@
 /*Standard Section*/
 .section_about_text {
-    padding: 20px 20px; /* Adjust the padding as needed */
-    max-width: 1120px;
-    height: auto;
-    margin: 0 auto;
-    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px; /* Adjust the padding as needed */
+    max-width: 1120px;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: blue;
 }
 
+.about-title, .section_about_text_p1, .btn-about-container {
+    margin-left: 0px; /* Indent content from the left */
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+
 section {
-    background-color: red; /*redzone*/
+    background-color: whitesmoke; /*redzone*/
 }
 
 /* Add your sections here */

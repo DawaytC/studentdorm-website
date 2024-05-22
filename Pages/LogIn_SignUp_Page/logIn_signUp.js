@@ -74,4 +74,3 @@ document.getElementById('newPasswordForm').addEventListener('submit', function(e
     const setNewPasswordModal = document.getElementById('setNewPasswordModal');
     closeModal(setNewPasswordModal);
 });
-
