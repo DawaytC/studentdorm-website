@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="/Pages/main.css">
+    <link rel="stylesheet" href="/Depository/Footer/footer.css">
+    <link rel="stylesheet" href="/Depository/UniResidence-Navigation-Bar/navigationBar.css">
+    <!--=============== EDIT: YOUR OWN LOCALE CSS ===============-->
+    <link rel="stylesheet" href="/Pages/Listing Page/listing.css">
+    <!--=============== TABICON ===============-->
+    <link rel="shortcut icon" type="UniResidence icon" href="/Assets/UniResidenceLogoIcon-coloured.png">
+    <title>Residential Listings</title>
+</head>
+<body>
+<!--==================== DON'T EDIT HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="/Pages/Home Page/index.html">
+            <img class="nav__logo" src="/Assets/UniResidenceLogoLandscape-white.svg" alt="logo">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/Pages/Home Page/index.html" class="nav__link">
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/Pages/Listing Page/listing.html" class="nav__link">
+                        <span>Listings</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/Pages/AboutUs_Page/aboutUsPage.html" class="nav__link">
+                        <span>About us</span>
+                    </a>
+                </li>
+
+                <li class="nav__item nav__item--mobile-only">
+                    <a href="/Pages/LogIn_SignUp_Page/logIn_signUp.html" class="nav__link">
+                        <span>Review A Dorm</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <a class="cta" href="review.html">
+                <button class="nav__cta">Review A Dorm</button>
+            </a>
+
+            <div class="nav__social">
+                <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://facebook.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-facebook-line"></i>
+                </a>
+
+                <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-mail-line"></i>
+                </a>
+            </div>
+
+            <div class="nav__social-link" id="nav-footer">
+                <p>Copyright © 2024 UniResidence. <br> All Right Reserved. </p>
+            </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+</header>
+
+<!--==================== MAIN ====================-->
+<main>
+    <!-- Example section -->
+    <!-- please use the name of the classes so that we can have the same designs -->
+     <!-- SAMPLE 
+    <section class="about" id="abouts">
+        <div class="section_about_text">
+            <p class="section_text_title_p1">SUBTITLE</p>
+            <h1 class="about-title">Title</h1>
+            <span class="section_about_text_p1">
+                  This is LogInPage</span>
+            <div class="btn-about-container">
+                <button class="btn btn-color-1" onclick="location.href='#'"> action btn > </button>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!--RESIDENTIAL CATEGORY-->
+    <div class = "wrapper">
+        <div class = "category-filter">
+            <div class = "container">
+                <div class = "title">
+                    <h1>Residential Listings</h1>
+                    <center><p>Check out the location, reviews, nearby university, and rent price.</p></center>
+                </div>
+
+                <div class = "filter-btns">
+                    <button type = "button" class = "filter-btn" id = "all">all</button>
+                    <button type = "button" class = "filter-btn" id = "new">On-Campus</button>
+                    <button type = "button" class = "filter-btn" id = "best-sellers">Off Campus</button>
+                    <button type = "button" class = "filter-btn" id = "specials">NEW Listing <i class="ri-file-add-line"></i></button>
+                </div>
+
+                <div class = "filter-items">
+                    
+                    <div class = "filter-item all new">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/1-Kolej Sepuluh_Cover.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Kolej Sepuluh</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jalan Universiti 1, Serdang, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">40 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UPM
+                                </span>
+                                <span class = "new-price">RM700/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all new">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/UNM_Cover.jpeg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>UNM Accomodation</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jln Broga, 43500 Semenyih, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">19 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UNM
+                                </span>
+                                <span class = "new-price">RM900/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all new specials">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/TAYLORS_Cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Taylor's Hostel</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jln Taylors, 47500 Subang Jaya, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">17 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    Taylors University
+                                </span>
+                                <span class = "new-price">RM2100/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all new">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/Sunway_Cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Sunway Hostel</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jalan Taylor's 47500 Subang Jaya Slg <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">19 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    Sunway University
+                                </span>
+                                <span class = "new-price">RM1500/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all new">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/DUA BELAS_Cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Dua Belas</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jalan Universiti 1, Serdang, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">28 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UPM
+                                </span>
+                                <span class = "new-price">RM500/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all new specials">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/KOSSAS_Cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>KOSASS</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jalan Universiti 1, Serdang, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">8 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UPM
+                                </span>
+                                <span class = "new-price">RM600/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all best-sellers specials">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/DREAM CITY_Cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Dream City</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    43300 Seri Kembangan, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">10 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UPM
+                                </span>
+                                <span class = "new-price">RM1700/month</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all best-sellers specials">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/HERITAGE RESIDENCE_Cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Heritage Residence</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    43300 Seri Kembangan, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">12 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UPM
+                                </span>
+                                <span class = "new-price">RM1100/month</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all new specials">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/APU_cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>APU Residence</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jalan Teknologi 5, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">5 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    APU
+                                </span>
+                                <span class = "new-price">RM2000/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all best-sellers">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/equine_cover.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Equine Residence</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jalan Universiti 1, Serdang, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">30 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UPM
+                                </span>
+                                <span class = "new-price">RM1200/month</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all new specials">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/IMU_cover.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>IMU Hostel</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jin Jalil Perkasa 19, Bukit Jalil, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">20 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    IMU
+                                </span>
+                                <span class = "new-price">RM800/sem</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all best-sellers specials">
+                        <div class = "item-img">
+                            <img src = "/Assets/Thumbnails/UniVillage_Cover.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>UniVillage</p>
+                            <div>
+                                <span class = "old-price">
+                                    <i class="ri-map-pin-line"></i>
+                                    Jalan Universiti 1, Serdang, Selangor <br>
+                                    <i class="ri-star-fill"></i>
+                                    <u class="reviews">3 Reviews</u> <br>
+                                    <i class="ri-school-line"></i>
+                                    UNM
+                                </span>
+                                <span class = "new-price">RM1400/month</span>
+                            </div>
+                            <a href = "#" class ="add-btn">See Review</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- FOOTER -->
+     <footer>
+        <div class="row">
+         <div class="col">
+             <img src="/Assets/UniResidenceLogoLandscape-white.svg" class="logo">
+             <img src="/Assets/UniResidenceLogo-portrait-white.svg" class="logo-mobile">
+         </div>
+
+         <div class="col">
+             <h3>Links <div class="underline"><span></span></div></h3>
+             <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="">Listings</a></li>
+                 <li><a href="">About Us</a></li>
+                 <li><a href="">Reviews</a></li>
+             </ul>
+         </div>
+
+         <div class="col">
+             <h3>Get in Touch!<div class="underline"><span></span></div></h3>
+             <form>
+                 <input type="email" placeholder="Enter your email id..." required>
+                 <button type="submit"><i class="ri-arrow-right-line"></i> </button>
+             </form>
+
+             <div class="nav__social__footer">
+                 <a href="https://www.instagram.com/" target="_blank" class="nav__social__footer-link">
+                    <i class="ri-instagram-line"></i>
+                 </a>
+
+                 <a href="https://facebook.com/" target="_blank" class="nav__social__footer-link">
+                    <i class="ri-facebook-line"></i>
+                 </a>
+
+                 <a href="https://dribbble.com/" target="_blank" class="nav__social__footer-link">
+                    <i class="ri-mail-line"></i>
+                 </a>
+              </div>
+         </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright © 2024 UniResidence.
+         All Rights Reserved</p>
+      </footer>
+</main>
+
+<!--=============== EDIT: YOUR OWN LOCALE JS ===============-->
+<script src="/Pages/Listing Page/listing.js"></script>
+<!--=============== MAIN JS ===============-->
+<script src="/Depository/UniResidence-Navigation-Bar/navigationBar.js"></script>
+</body>
+</html>
