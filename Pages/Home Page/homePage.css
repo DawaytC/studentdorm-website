@@ -229,10 +229,10 @@ body, html {
     width: 56px;
     height: 56px;
     background: transparent;
-    color: rgb(256, 256, 256, 0.8);
+    color: rgb(256, 256, 256, 0.9);
     border: none;
     border-radius: none;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     transition: all 0.1s ease 0s;
 }
@@ -240,7 +240,6 @@ body, html {
 .search-button:hover {
     color: white;
 }
-
 
 @media (max-width: 700px) {
 
@@ -268,15 +267,120 @@ body, html {
     }
 }
 
+/* FEATURED UNIVERSITY DORMS */
+
+.container-university {
+    width: 78%;
+    margin: auto;
+    display: flex; /* Use flexbox for layout */
+}
+
+.featured-university {
+    /* background-color: red; /* Background color for the entire section */
+    padding: 20px 0; /* Space around the section */
+    background: linear-gradient(to right, rgba(0, 136, 169, 0.8) 30%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.column-background .about-title {
+    text-shadow: 0 5px 60px rgba(0, 36, 45, 1);
+}
+
+.featured-university::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/Assets/Thumbnails/Taylor_Sunway.png) center/cover no-repeat;
+    z-index: -1; /* Place the overlay above the background image */
+}
+
+.column {
+    flex: 1; /* Each column takes equal space */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.column-background {
+    background-color: transparent; /* Background for each column */
+    color: black; /* Text color inside the columns */
+    padding: 20px 0 20px 0; /* Space inside each column */
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.column-background H1, .column-background .title-heading{
+    color: white;
+}
+
+.column-background .ratings .reviews {
+    color: white;
+}
+
+@media screen and (max-width: 1120px) {
+    .container-university {
+        width: 100%;
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .featured-university {
+        margin-bottom: 40px;
+    }
+}
+
+.column:last-child .column-background {
+    margin-left: 20px; /* Indent last column background */
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .featured-university {
+        margin-bottom: 30px;
+    }
+
+    .container-university {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        width: 90%;
+    }
+
+    .column-background {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .column {
+        width: 100%; /* Each column takes full width */
+    }
+
+    .column-background .about-title {
+        margin-bottom: 3px;
+    }
+
+    .column:last-child .column-background {
+        margin-left: 0; /* Indent last column background */
+    }
+
+    .featured-university::before {
+        background: url(/Assets/Thumbnails/Taylor_Sunway\ \(700\ x\ 500\ px\).png);
+    }
+}
+
+
+
+
 /* FEATURED BANNER */
 
 .featureBanner {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     margin-top: 50px;
     overflow: hidden;
     background: linear-gradient(to right, rgba(0, 136, 169, 0.8) 30%, rgba(0, 0, 0, 0) 100%); /* Linear gradient background */ /* change bg */
 }
+
 
 .featureBanner::before {
     content: "";
@@ -468,4 +572,171 @@ body, html {
 .property-room {
     font-size: 10pt;
     margin-top: 3px;
+}
+
+/* TESTIMONIAL
+.container {
+    width: 78%;
+    margin: auto;
+    height: 100%;
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 1120px) {
+    .container {
+        width: 100%;
+        gap: 10px; /* Adjust gap for smaller screens 
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+}
+*/
+
+/* UNIVERSITY REVIEWS */
+.section-header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    height: auto;
+    position: relative;
+}
+
+.section-header h1{
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: rgba(0, 136, 169, 1);;
+}
+
+.university-logos {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensures the image scales with the screen size */
+    width: 90%; /* Adjust this value to scale the image down */
+    cursor: default; /* Changes the cursor to default */
+}
+
+.container-university-logo {
+    width: 78%;
+    margin: auto;
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 1120px) {
+    .container-university-logo {
+        width: 100%;
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container-university-logo {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-header h1 {
+        font-size: 14pt;
+    }
+
+    .university-logos {
+        max-width: 100%; /* Ensures the image scales with the screen size */
+        width: 100%; /* Adjust this value to scale the image down */
+    }
+}
+
+/* SHARE REVIEW */
+
+.container-share {
+    width: 76%;
+    margin: auto;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid rgb(29, 29, 29, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.card-share {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-share .location {
+    text-align: center;
+}
+
+.card-share .about-title {
+    text-align: center;
+}
+
+.section_featured_content .about-title {
+    text-shadow: 0 5px 60px rgba(0, 36, 45, 0.952);
+}
+
+@media (max-width: 1120px) {
+    .container-share {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .container-share {
+        width: 90%;
+    }
+
+    .card-share {
+        height: 150px;
+    }
+
+    .card-share .about-title {
+        font-size: 17pt;
+    }
+}
+
+/* VIDEO HEADER */
+
+.video {
+    margin: 40px 0 40px 0;
+}
+
+.container-video {
+    width: 76%;
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    height: auto;
+    position: relative;
+    border-radius: 16px;
+    border: 2px solid red;
+}
+
+.container-video-content {
+    height: 450px;
+}
+
+.video-header h1{
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: rgba(0, 136, 169, 1);;
+}
+
+.ri-play-circle-fill {
+    font-size: 46px;
+    color: white;
+    opacity: 0.8;
 }
