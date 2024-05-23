@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="/Pages/main.css">
+    <link rel="stylesheet" href="/Depository/UniResidence-Navigation-Bar/navigationBar.css">
+    <!--=============== EDIT: YOUR OWN LOCALE CSS ===============-->
+    <link rel="stylesheet" href="/Pages/AboutUs_Page/aboutUsPage.css">
+    <!--=============== TABICON ===============-->
+    <link rel="shortcut icon" type="UniResidence icon" href="/Assets/UniResidenceLogoIcon-coloured.png">
+    <title>About Page</title>
+</head>
+<body>
+<!--==================== DON'T EDIT HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html">
+            <img class="nav__logo" src="/Assets/UniResidenceLogoLandscape-white.svg" alt="logo">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="listings.html" class="nav__link">
+                        <span>Listings</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="aboutUsPage.html" class="nav__link">
+                        <span>About us</span>
+                    </a>
+                </li>
+
+                <li class="nav__item nav__item--mobile-only">
+                    <a href="review.html" class="nav__link">
+                        <span>Review A Dorm</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <a class="cta" href="review.html">
+                <button class="nav__cta">Review A Dorm</button>
+            </a>
+
+            <div class="nav__social">
+                <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://facebook.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-facebook-line"></i>
+                </a>
+
+                <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-mail-line"></i>
+                </a>
+            </div>
+
+            <div class="nav__social-link" id="nav-footer">
+                <p>Copyright © 2024 UniResidence. <br> All Right Reserved. </p>
+            </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+</header>
+
+<!--==================== MAIN ====================-->
+<main>
+    <!-- About us section -->
+    <!-- please use the name of the classes so that we can have the same designs -->
+    <section class="aboutus" id="aboutus">
+        <div class="section_about_text main-about">
+            <div class="main-about-content">
+                <div class="about-img-container">
+                    <img src="building.jpg" alt="Picture1" class="about-img">
+                </div>
+
+                <div class="about-text">
+                    <h2 class="section_text_title_p1">About</h2>
+                    <h1 class="about-title">UniResidence</h1>
+                    <p>We know that choosing the right dorm can make all the difference in the world for college students. That's why we've created a community-driven platform that's designed to help students make informed decisions when it comes to selecting the perfect dorm.</p>
+                    <p>RateMyDorm is your resource for real, honest dorm reviews from students just like you. We encourage you to share your experiences so that others can benefit from your insights. Join our community today and contribute to the conversation about college dorms.</p>
+                    <button class="btn btn-color-1" onclick="location.href='#faq'">FAQ</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">CONTACT US</button>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section id="faq" class="faq-section">
+        <div class="faq-container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is UniResidence?</button>
+                <div class="faq-answer">
+                    <p>UniResidence is a community-driven platform designed to help college students make informed decisions about their dorms by providing real, honest reviews from other students.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I leave a review?</button>
+                <div class="faq-answer">
+                    <p>You can leave a review by visiting our 'Review A Dorm' page and filling out the review form. Your feedback helps other students make better decisions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is there a cost to use UniResidence?</button>
+                <div class="faq-answer">
+                    <p>No, UniResidence is completely free to use for all students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">Contact Us</h2>
+                <div class="contact-form-container">
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn btn-color-1">Send</button>
+            </form>
+                </div>
+        </div>
+    </section>
+</main>
+
+<!--=============== EDIT: YOUR OWN LOCALE JS ===============-->
+<script src="/Pages/AboutUs_Page/aboutUsPage.js"></script>
+<!--=============== MAIN JS ===============-->
+<script src="/Depository/UniResidence-Navigation-Bar/navigationBar.js"></script>
+</body>
+</html>

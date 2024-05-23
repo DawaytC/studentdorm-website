@@ -1,0 +1,227 @@
+/*Standard Section*/
+section {
+    background-color: #005b72; /*redzone*/
+    padding-bottom: 20px;
+}
+.main-about {
+    padding: 20px 20px; /* Adjust the padding as needed */
+    max-width: 1120px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(207, 207, 207);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-img-container, .about-text {
+    flex: 1;
+    min-width: 200px; /* Ensures better layout on smaller screens */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.about-title,about-title-text {
+    font-size: 2.0em;
+    color: #005b72;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.section_text_title_p1{
+    font-size: 1.5em;
+    color: #0088a9;
+}
+.main-about p {
+    font-size: 1.0em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.btn-color-1 {
+    background-color: #005b72;
+    color: #fff;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-column {
+    text-align: center;
+}
+
+.text-column {
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .main-about-content {
+        flex-direction: column;
+    }
+
+    .about-img-container, .about-text {
+        padding: 10px;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    /* Ensure FAQ questions are visible on smaller screens */
+    .faq-question {
+        display: block; /* Ensure FAQ questions are displayed */
+    }
+
+    /* Adjust padding and layout for smaller screens in FAQ section */
+    .faq-item {
+        margin-bottom: 10px;
+    }
+    .aboutus .btn,
+    .contact-section .btn {
+        display: block;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 20px;
+    background-color: #005b72;
+}
+
+.faq-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    background-color:rgb(207, 207, 207);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #005b72;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.faq-question {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #0088a9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-answer {
+    display: none;
+    text-align: center;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* Contact Us Section */
+
+.contact-section {
+    padding: 20px;
+    background-color: #005b72;
+
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:rgb(207, 207, 207);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-form-container, .about-img-container {
+    flex: 1;
+    min-width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #005b72;
+    color: #fff;
+}
