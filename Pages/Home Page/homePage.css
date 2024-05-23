@@ -83,12 +83,14 @@ body, html {
 
 .about-title {
     font-size: 33pt;
+    color: rgba(0, 136, 169, 1);
     margin: 0;
 }
 
 .section_about_text_p1 {
-    font-size: 12pt;
-    line-height: 1.8; /* Adjusted for better readability */
+    font-size: 14pt;
+    font-weight: 500;
+    line-height: 1.4; /* Adjusted for better readability */
 }
 
 .section_about_photo {
@@ -112,7 +114,8 @@ body, html {
     display: flex;
     align-items: center;
     height: 100%; /* Maintain the height of the inner container */
-    width: 300%;
+    width: 100%;
+    object-fit: cover;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -146,7 +149,7 @@ body, html {
     }
 
     .section_about_text_p1 {
-        font-size: 10pt;
+        font-size: 12pt;
         line-height: 1.4; /* Adjusted for better readability */
     }
 
@@ -157,7 +160,7 @@ body, html {
     }
 
     .carousel {
-        height: 40vh; /* Ensure the carousel takes the full height of the section */
+        height: 50vh; /* Ensure the carousel takes the full height of the section */
     }
 
     .carousel-inner img {
@@ -169,10 +172,12 @@ body, html {
     max-width: 1120px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #24252A;
+    background: linear-gradient(to top, rgb(1, 130, 162) 2%, rgba(0, 136, 169, 1) 100%);
     border-radius: 16px;
     margin-bottom: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+    border: 2px solid;
+    border-color:  rgba(0, 136, 169, 1);
 }
 
 .containerFields H1 {
@@ -189,27 +194,24 @@ body, html {
 .search-field {
     width: 152px;
     height: 56px;
-    border: 2px solid;
-    border-color: rgb(59, 59, 59);
-    color: rgb(255, 255, 255,0.9);
-    border-radius: 8px;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
     padding: 0 10px;
     font-size: 16px;
-    background-color: rgba(43, 43, 49, 0.5);
-    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.3);
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid white;
 }
 
 .search-field::placeholder {
-    color: rgb(255, 255, 255,0.9); /* Font color of the placeholder */
+    color: white;
+    /*color: rgba(6, 84, 104, 0.896); */ /* Font color of the placeholder */
 }
 
 .search-field:focus {
-    border-color: rgba(0, 136, 169, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
     outline: none;
 }
-
-
-
 
 #university {
     width: 480px;
@@ -223,43 +225,20 @@ body, html {
     width: 226px;
 }
 
-.custom-dropdown {
-    position: relative;
-    width: 100%;
-}
-.dropdown-options {
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 1000;
-    display: none;
-}
-.dropdown-option {
-    padding: 10px;
-    cursor: pointer;
-}
-.dropdown-option:hover {
-    background-color: #f0f0f0;
-}
-
 .search-button {
     width: 56px;
     height: 56px;
-    background-color: rgba(0, 136, 169, 1);
-    color: white;
-    border: 1px solid rgba(0, 136, 169, 0.8);
-    border-radius: 8px;
+    background: transparent;
+    color: rgb(256, 256, 256, 0.8);
+    border: none;
+    border-radius: none;
     font-size: 24px;
     cursor: pointer;
+    transition: all 0.1s ease 0s;
 }
 
 .search-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-    transition: all 0.3s ease 0s;
+    color: white;
 }
 
 
@@ -294,8 +273,9 @@ body, html {
 .featureBanner {
     position: relative;
     margin-bottom: 50px;
+    margin-top: 50px;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(0, 136, 169, 0.8) 20%, rgba(0, 0, 0, 0) 100%); /* Linear gradient background */ /* change bg */
+    background: linear-gradient(to right, rgba(0, 136, 169, 0.8) 30%, rgba(0, 0, 0, 0) 100%); /* Linear gradient background */ /* change bg */
 }
 
 .featureBanner::before {
@@ -305,14 +285,14 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/Assets/big-tiny-belly-XtnNrQYC7ts-unsplash.jpg') center/cover no-repeat fixed;
+    background: url('/Assets/Thumbnails/dreamcity.jpg') center/cover no-repeat fixed;
     z-index: -1;
     transform: translateZ(0);
-    background-attachment: fixed;
-    transform-origin: center;
-    transform-style: preserve-3d;
 }
 
+.featureBanner H1 {
+    color: white;
+}
 
 .section_featured_content {
     max-width: 1120px;
@@ -329,9 +309,9 @@ body, html {
     color: white;
 }
 
-.ri-star-fill {
+.ri-star-fill, .ri-star-half-line {
     color: gold;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .location {
@@ -369,4 +349,123 @@ body, html {
         font-size: 24pt; /* Change the font size to 24 pixels */
         margin-bottom: 0px;
     }
+}
+
+/*LISTINGS*/
+.thumbnail {
+    position: relative;
+    display: inline-block; /* Ensure the pseudo-element is within the bounds of the thumbnail */
+    border-radius: 16px 16px 0 0; /* Apply the same border radius as the img for consistent styling */
+    overflow: hidden; /* Ensure the overlay stays within the thumbnail bounds */
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0 0; /* Ensure the border radius matches the .thumbnail */
+}
+
+.thumbnail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 139, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure the overlay is on top of the image */
+    border-radius: 16px 16px 0 0; /* Apply the same border radius as the img and .thumbnail */
+}
+
+.thumbnail:hover::before {
+    opacity: 1; /* Make the overlay visible on hover */
+}
+
+.headingStars i {
+    font-size: 14px; /* Make the stars smaller */
+    cursor: default;
+}
+
+.residenceTitle {
+    font-size: 14pt;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    cursor: default;
+}
+
+.details p {
+    margin: 5px 0;
+    cursor: default;
+}
+
+.residenceTitle, .residenceParagraph {
+    margin-left: 20px;
+    cursor: default;
+}
+
+/* RESPONSIVE CARDS */
+.listingCards {
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.card{
+    max-width: 360px;
+    min-height: 300px;
+    background: linear-gradient(to top, rgba(0, 136, 169, 1) 15%, rgba(0, 136, 169, 0.2) 100%);
+    padding-bottom: 10px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: #FFF;
+    margin: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.09);
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    border: 2px solid;
+    border-color: rgba(0, 136, 169, 0.5);
+}
+
+
+/*
+.card:nth-child(2){
+    background: rgba(0, 136, 169, 1);
+}
+
+.card:last-child{
+    background: #673ab7;
+}
+*/
+
+.card-title{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.card-content{
+    font-size: 14pt;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+.card .ri-graduation-cap-fill, .ri-group-fill {
+    font-size: 10pt;
+}
+
+.property-room {
+    font-size: 10pt;
+    margin-top: 3px;
 }

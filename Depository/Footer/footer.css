@@ -194,3 +194,17 @@ hr{
         font-size: 10px;
     }
 }
+
+.nav__social__footer {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.nav__social__footer-link {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    transition: transform .4s;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

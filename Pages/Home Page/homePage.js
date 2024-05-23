@@ -66,5 +66,3 @@ document.getElementById('university').addEventListener('click', function() {
         }
     }, { once: true });
 });
-
-
