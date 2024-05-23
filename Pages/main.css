@@ -56,24 +56,15 @@ body {
 
 /* Button Design 1 */
 .btn-color-1 {
-    margin: 10px 0 10px 0;
-    padding: 10px 20px;
-    background-color: #F4F4F4;
-    border: 2px solid;
-    border-color: #D9D9D9;
-    border-radius: 10px;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
-    color: black;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 136, 169, 1);
+    background-color: rgba(0, 136, 169, 0.8);
+    color: white;
     font-weight: var(--font-medium);
     font-family: var(--body-font);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-color-1:hover{
-    background-color: #e8e8e8;
-    border: 2px solid;
-    border-color: #D9D9D9;
-    color: black;
-    transform: translateX(5px);
+
 }

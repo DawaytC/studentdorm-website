@@ -172,18 +172,18 @@ body, html {
     max-width: 1120px;
     margin: 0 auto;
     padding: 20px;
-    background: linear-gradient(to top, rgb(1, 130, 162) 2%, rgba(0, 136, 169, 1) 100%);
+    /*background: linear-gradient(to top, rgb(1, 130, 162) 2%, rgba(0, 136, 169, 1) 100%); */
     border-radius: 16px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.01);
     border: 2px solid;
-    border-color:  rgba(0, 136, 169, 1);
+    border-color:  rgba(0, 0, 0, 0.2);
 }
 
 .containerFields H1 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: white;
+    color: rgba(0, 136, 169, 1);
 }
 
 .search-section {
@@ -194,22 +194,22 @@ body, html {
 .search-field {
     width: 152px;
     height: 56px;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 136, 169, 1);
     border: 0;
     padding: 0 10px;
     font-size: 16px;
     background: transparent;
     outline: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgba(0, 136, 169, 1);;
 }
 
 .search-field::placeholder {
-    color: white;
+    color: rgba(0, 136, 169, 0.8);;
     /*color: rgba(6, 84, 104, 0.896); */ /* Font color of the placeholder */
 }
 
 .search-field:focus {
-    border-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 136, 169, 1);;
     outline: none;
 }
 
@@ -229,7 +229,7 @@ body, html {
     width: 56px;
     height: 56px;
     background: transparent;
-    color: rgb(256, 256, 256, 0.9);
+    color: rgba(0, 136, 169, 0.8);
     border: none;
     border-radius: none;
     font-size: 32px;
@@ -238,7 +238,7 @@ body, html {
 }
 
 .search-button:hover {
-    color: white;
+    color: rgba(0, 136, 169, 1);
 }
 
 @media (max-width: 700px) {
