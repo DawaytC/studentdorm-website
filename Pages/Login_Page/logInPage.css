@@ -1,0 +1,15 @@
+/*Standard Section*/
+.section_about_text {
+    padding: 20px 20px; /* Adjust the padding as needed */
+    max-width: 1120px;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: lightgreen;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section {
+    background-color: red; /*redzone*/
+}

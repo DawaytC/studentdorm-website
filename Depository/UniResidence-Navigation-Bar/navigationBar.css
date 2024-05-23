@@ -98,8 +98,9 @@ a {
 
 /* CTA DESIGN */
 .nav__cta {
-  padding: 10px 20px;
+  padding: 10px 16px;
   background-color: rgba(0, 136, 169, 1);
+  font-size: 14px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -261,15 +262,17 @@ a {
 @media screen and (max-width: 1150px) {
   .nav__social-link p{
     color: var(--white-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: transform .4s;
     display: flex;
+    transform: translateX(-1.5rem);
   }
 }
 
+/* SOCIAL LINK ANIMATION 
 .nav__social-link:hover {
   transform: translateY(-.25rem);
-}
+} */
 
 
 /* Show menu */
@@ -317,6 +320,6 @@ a {
   .nav__menu {
     display: flex;
     align-items: center;
-    column-gap: 3.5rem;
+    column-gap: 2.5rem;
   }
 }

@@ -1,112 +1,214 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-      <!--=============== MAIN CSS ===============-->
-      <link rel="stylesheet" href="/Pages/main.css">
-      <link rel="stylesheet" href="/Depository/UniResidence-Navigation-Bar/navigationBar.css">
-      <!--=============== EDIT: YOUR OWN LOCALE CSS ===============-->
-      <link rel="stylesheet" href="/Pages/Home Page/homePage.css">
-      <!--=============== TABICON ===============-->
-      <link rel="shortcut icon" type="UniResidence icon" href="/Assets/UniResidenceLogoIcon-coloured.png">
-      <title>Home</title>
-   </head>
-   <body>
-      <!--==================== DON'T EDIT HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="index.html">
-               <img class="nav__logo" src="/Assets/UniResidenceLogoLandscape-white.svg" alt="logo">
-            </a>
+<html lang="en">
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="index.html" class="nav__link">
-                        <span>Home</span>
-                     </a>
-                  </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="/Pages/main.css">
+    <link rel="stylesheet" href="/Depository/Footer/footer.css">
+    <link rel="stylesheet" href="/Depository/UniResidence-Navigation-Bar/navigationBar.css">
+    <!--=============== EDIT: YOUR OWN LOCALE CSS ===============-->
+    <link rel="stylesheet" href="/Pages/Home Page/homePage.css">
+    <!--=============== TABICON ===============-->
+    <link rel="shortcut icon" type="UniResidence icon" href="/Assets/UniResidenceLogoIcon-coloured.png">
+    <title>Home</title>
+</head>
 
-                  <li class="nav__item">
-                     <a href="listings.html" class="nav__link">
-                        <span>Listings</span>
-                     </a>
-                  </li>
+<body>
+    <!--==================== DON'T EDIT HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="index.html">
+              <img class="nav__logo" src="/Assets/UniResidenceLogoLandscape-white.svg" alt="logo">
+           </a>
 
-                  <li class="nav__item">
-                     <a href="about.html" class="nav__link">
-                        <span>About us</span>
-                     </a>
-                  </li>
-
-                  <li class="nav__item nav__item--mobile-only">
-                    <a href="review.html" class="nav__link">
-                       <span>Review A Dorm</span>
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="index.html" class="nav__link">
+                       <span>Home</span>
                     </a>
                  </li>
-               </ul>
 
-               <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-large-line"></i>
+                 <li class="nav__item">
+                    <a href="listings.html" class="nav__link">
+                       <span>Listings</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="about.html" class="nav__link">
+                       <span>About us</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item nav__item--mobile-only">
+                   <a href="review.html" class="nav__link">
+                      <span>Review A Dorm</span>
+                   </a>
+                </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-large-line"></i>
+              </div>
+
+              <a class="cta" href="review.html">
+                 <button class="nav__cta">Review A Dorm</button>
+              </a>
+
+              <div class="nav__social">
+                 <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-instagram-line"></i>
+                 </a>
+
+                 <a href="https://facebook.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-facebook-line"></i>
+                 </a>
+
+                 <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-mail-line"></i>
+                 </a>
+              </div>
+
+              <div class="nav__social-link" id="nav-footer">
+               <p>Copyright © 2024 UniResidence. <br> All Right Reserved. </p>
+              </div>
+           </div>
+
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+     </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+        
+        <section class="home" id="home">
+         <div class="section_content">
+             <div class="section_about_text">
+                 <p class="section_text_title_p1"></p>
+                 <h1 class="about-title">Discover new dorms faster than ever.</h1>
+                 <span class="section_about_text_p1">
+                     Find apartments for rent that fit your timeline
+                     and your budget in the most convenient manner possible!
+                 </span>
+             </div>
+             <div class="section_about_photo">
+               <div class="carousel">
+                   <div class="carousel-inner">
+                       <img src="/Assets/christopher-jolly-GqbU78bdJFM-unsplash.jpg" class="hero" alt="herosection1">
+                       <img src="/Assets/gabriel-beaudry-WuQME0I_oZA-unsplash.jpg" class="hero" alt="herosection2">
+                       <img src="/Assets/norbert-levajsics-oTJ92KUXHls-unsplash.jpg" class="hero" alt="herosection3">
+                   </div>
+                   <button class="prev"></button>
+                   <button class="next"></button>
                </div>
+           </div>
+         </div>
+     </section>
 
-               <a class="cta" href="review.html">
-                  <button class="nav__cta">Review A Dorm</button>
-               </a>
+      <div class="containerFields">
+         <H1>Look Apartments Nearby </H1>
+         <div class="search-section">
+             <input type="text" id="university" class="search-field" placeholder="Enter a college or university...">
+             <select id="property-type" class="search-field">
+                 <option value="">Property type</option>
+                 <option value="in-campus">In-campus</option>
+                 <option value="off-campus">Off-campus</option>
+             </select>
+             <select id="rooms-guests" class="search-field">
+                 <option value="">Rooms & Guests</option>
+                 <option value="1-1">1 - 1</option>
+                 <option value="2-2">2 - 2</option>
+                 <option value="3-3">3 - 3</option>
+             </select>
+             <button class="search-button" onclick="window.location.href='listings.html'">
+               <i class="ri-arrow-right-line"></i>
+            </button>
+         </div>
+     </div>
 
-               <div class="nav__social">
-                  <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
-                     <i class="ri-instagram-line"></i>
-                  </a>
+     <section class="featureBanner">
+      <div class="section_featured_content">
+         <p class="title-heading">RM 450 / per month </p>
+         <H1 class="about-title">
+            Kemah Tinggi
+            <i class="ri-arrow-right-line"></i>
+         </H1>
+         <p class="location"><a href="https://www.google.com/maps/place/Villa+Bali+Kemah+Tinggi/@-8.6427209,115.111918,15z/data=!4m2!3m1!1s0x0:0x3eda740057f82065?sa=X&ved=1t:2428&ictx=111"  target="_blank">
+            43300 Seri Kembangan, Selangor
+            <i class="ri-arrow-right-up-line"></i>
+         </a></p>
+         
+         <div class="ratings">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <u class="reviews">80 Reviews</u>
+         </div>
+      </div>
+     </section>
 
-                  <a href="https://facebook.com/" target="_blank" class="nav__social-link">
-                     <i class="ri-facebook-line"></i>
-                  </a>
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+             <div class="col">
+                 <img src="/Assets/UniResidenceLogoLandscape-white.svg" class="logo">
+                 <img src="/Assets/UniResidenceLogo-portrait-white.svg" class="logo-mobile">
+             </div>
 
-                  <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
-                     <i class="ri-mail-line"></i>
-                  </a>
-               </div>
+             <div class="col">
+                 <h3>Links <div class="underline"><span></span></div></h3>
+                 <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a href="">Listings</a></li>
+                     <li><a href="">About Us</a></li>
+                     <li><a href="">Reviews</a></li>
+                 </ul>
+             </div>
 
-               <div class="nav__social-link" id="nav-footer">
-                <p>Copyright © 2024 UniResidence. <br> All Right Reserved. </p>
-               </div>
+             <div class="col">
+                 <h3>Get in Touch!<div class="underline"><span></span></div></h3>
+                 <form>
+                     <input type="email" placeholder="Enter your email id..." required>
+                     <button type="submit"><i class="ri-arrow-right-line"></i> </button>
+                 </form>
+
+                 <div class="nav__social">
+                     <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://facebook.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-facebook-line"></i>
+                     </a>
+
+                     <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-mail-line"></i>
+                     </a>
+                  </div>
+             </div>
             </div>
+            <hr>
+            <p class="copyright">Copyright © 2024 UniResidence.
+             All Rights Reserved</p>
+          </footer>
+    </main>
 
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
-            </div>
-         </nav>
-      </header>
+    <!--=============== EDIT: YOUR OWN LOCALE JS ===============-->
+    <script src="/Pages/Home Page/homePage.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="/Depository/UniResidence-Navigation-Bar/navigationBar.js"></script>
+</body>
 
-      <!--==================== MAIN ====================-->
-      <main>
-         <!-- Example section -->
-         <!-- please use the name of the classes so that we can have the same designs -->
-         <section class="about" id="abouts">
-            <div class="section_about_text">
-               <p class="section_text_title_p1">SUBTITLE</p>
-               <h1 class="about-title">Title</h1>
-               <span class="section_about_text_p1">
-                  text_p1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Morbi consectetur pulvinar vulputate. Nullam bibendum nisl nisl, porta dignissim ligula tempus eget.
-                  Praesent sollicitudin lorem ac dui malesuada fermentum. Phasellus vitae.</span>
-               <div class="btn-about-container">
-                  <button class="btn btn-color-1" onclick="location.href='#'"> action btn > </button>
-               </div>
-            </div>
-         </section>
-      </main>
-
-      <!--=============== EDIT: YOUR OWN LOCALE JS ===============-->
-      <script src="/Pages/Home Page/homePage.js"></script>
-      <!--=============== MAIN JS ===============-->
-      <script src="/Depository/UniResidence-Navigation-Bar/navigationBar.js"></script>
-   </body>
 </html>

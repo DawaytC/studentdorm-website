@@ -1,18 +1,51 @@
 /*Standard Section*/
+
+/*
 .section_about_text {
-    padding: 20px 20px; /* Adjust the padding as needed */
-    max-width: 1120px;
-    height: auto;
-    margin: 0 auto;
-    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: flex-start;
+    padding: 30px;
+    max-width: 1120px;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: green;
 }
 
-section {
-    background-color: red; /*redzone*/
+.section_about_photo {
+    width: 40%;
+    height: 50vh;
+    overflow: hidden;
 }
+*/
+
+/*
+.section_about_photo .hero {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.home {
+    display: flex;
+}
+
+
+/*
+.home {
+    background-image: url(/Assets/christopher-jolly-GqbU78bdJFM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-position-x: 600px;
+} */
+
+section {
+    background-color: white; /*redzone*/
+}
+
 
 /* Add your sections here */
 
@@ -20,3 +53,320 @@ section {
     and I will keep it updated in main.css
     - Dwight
 */
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    max-width: 1120px;
+    padding: 0;
+    margin: 0 auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.section_about_text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.about-title {
+    font-size: 33pt;
+    margin: 0;
+}
+
+.section_about_text_p1 {
+    font-size: 12pt;
+    line-height: 1.8; /* Adjusted for better readability */
+}
+
+.section_about_photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%; /* Ensure the photo section takes full height */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 85%; /* Set height to 80% for desktop view */
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Maintain the height of the inner container */
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%; /* Ensure images fill the height of the container */
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+    .home {
+        height: auto;
+        padding: 30px;
+    }
+
+    .section_content {
+        flex-direction: column;
+    }
+
+    .section_about_text {
+        padding-right: 0;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .about-title {
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+
+    .section_about_text_p1 {
+        font-size: 10pt;
+        line-height: 1.4; /* Adjusted for better readability */
+    }
+
+    .section_about_photo {
+        order: -1; /* Move the photo to the top */
+        margin-bottom: 20px;
+        height: 30vh; /* Adjust height for mobile view */
+    }
+
+    .carousel {
+        height: 40vh; /* Ensure the carousel takes the full height of the section */
+    }
+
+    .carousel-inner img {
+        height: 100%; /* Ensure images fill the height of the container */
+    }
+}
+
+.containerFields {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #24252A;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+.containerFields H1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.search-section {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.search-field {
+    width: 152px;
+    height: 56px;
+    border: 2px solid;
+    border-color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255,0.9);
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: rgba(43, 43, 49, 0.5);
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.3);
+}
+
+.search-field::placeholder {
+    color: rgb(255, 255, 255,0.9); /* Font color of the placeholder */
+}
+
+.search-field:focus {
+    border-color: rgba(0, 136, 169, 0.8);
+    outline: none;
+}
+
+
+
+
+#university {
+    width: 480px;
+}
+
+#property-type {
+    width: 238px;
+}
+
+#rooms-guests {
+    width: 226px;
+}
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+.dropdown-options {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+.search-button {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(0, 136, 169, 1);
+    color: white;
+    border: 1px solid rgba(0, 136, 169, 0.8);
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    transition: all 0.3s ease 0s;
+}
+
+
+@media (max-width: 700px) {
+
+    .containerFields {
+        margin: 30px;
+    }
+
+    .search-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-field {
+        width: 100%;
+    }
+    #university, #property-type, #rooms-guests {
+        width: 100%;
+        height: 48px;
+        font-size: 12pt;
+    }
+
+    .search-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* FEATURED BANNER */
+
+.featureBanner {
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(0, 136, 169, 0.8) 20%, rgba(0, 0, 0, 0) 100%); /* Linear gradient background */ /* change bg */
+}
+
+.featureBanner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/Assets/big-tiny-belly-XtnNrQYC7ts-unsplash.jpg') center/cover no-repeat fixed;
+    z-index: -1;
+    transform: translateZ(0);
+    background-attachment: fixed;
+    transform-origin: center;
+    transform-style: preserve-3d;
+}
+
+
+.section_featured_content {
+    max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+    height: 350px;
+    background-color: none;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 0;
+    color: white;
+}
+
+.ri-star-fill {
+    color: gold;
+    opacity: 0.9;
+}
+
+.location {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.location a {
+    color: rgb(255, 255, 255,1);
+}
+
+.location a:hover {
+    color: rgb(255, 255, 255,1);
+    transition: color 0.3s ease-in;
+}
+
+
+.location:hover, .reviews:hover {
+    cursor: pointer;
+}
+
+.about-title .ri-arrow-right-line:hover {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .section_featured_content {
+        margin-left: 30px;
+        height: 250px;
+    }
+
+    .featureBanner .about-title {
+        font-size: 24pt; /* Change the font size to 24 pixels */
+        margin-bottom: 0px;
+    }
+}
