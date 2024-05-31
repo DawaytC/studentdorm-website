@@ -7,15 +7,15 @@
 
 /* Custom styles for buttons */
 .custom-btn {
-    background-color: #997974 !important; /* Custom background color */
-    border-color: #997974 !important;     /* Custom border color */
+    background-color:  rgba(0, 136, 169, 0.8) !important; /* Custom background color */
+    border-color: rgba(0, 136, 169, 1) !important;     /* Custom border color */
     color: #ffffff !important;            /* Custom text color */
 }
 
 /* Custom hover effects for buttons */
 .custom-btn:hover {
-    background-color: #5c5c5c !important; /* Custom background color on hover */
-    border-color: #5c5c5c !important;     /* Custom border color on hover */
+    background-color: rgba(0, 136, 169, 1) !important; /* Custom background color on hover */
+    border-color: rgba(0, 136, 169, 1) !important;     /* Custom border color on hover */
     color: #ffffff !important;            /* Ensure text color stays white on hover */
 }
 
@@ -23,7 +23,7 @@
 main {
     padding: 0;
     margin: 0;
-    background: #f2f6e9; /* Setting background color */
+    background: white; /* Setting background color */
 }
 
 /* Form container styling */
@@ -38,11 +38,11 @@ main {
     margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #938f93;
+    color:  rgba(0, 136, 169, 0.8);
 }
 
 .submit:hover {
-    color: #bdbbbd;
+    color:  rgba(0, 136, 169, 1);
 }
 
 .forgot-pass {
@@ -67,7 +67,7 @@ main {
 
 /* Styling for feature titles */
 .feature-title {
-    color: #333; /* Text color */
+    color:  rgba(0, 136, 169, 1); /* Text color */
     font-size: 1.3rem; /* Font size */
     font-weight: 700; /* Font weight */
     margin-bottom: 20px; /* Bottom margin */
@@ -90,25 +90,25 @@ main {
 
 /* Styling for buttons within features section */
 .features .btn {
-    background-color: #997974; /* Background color */
-    border: 1px solid #997974; /* Border */
+    background-color:  rgba(0, 136, 169, 1); /* Background color */
+    border: 2px solid  rgba(0, 136, 169, 0.8); /* Border */
     color: #fff; /* Text color */
 }
 
 /* Hover effect for buttons within features section */
 .features .btn:hover {
-    background-color: #333; /* Background color on hover */
-    border: 1px solid #333; /* Border on hover */
+    background-color:  rgba(0, 136, 169, 1); /* Background color on hover */
+    border: 2px solid  rgba(0, 136, 169, 1); /* Border on hover */
 }
 
 h2 {
     text-align: center;
-    color: #997974;
+    color:  rgba(0, 136, 169, 0.8);
     margin-bottom: 10px;
 }
 
 small {
-    color: rgba(100, 100, 100, 0.7); /* Greyish color with opacity */
+    color:  rgba(0, 0, 0, 0.8); /* Greyish color with opacity */
     font-weight: normal;
     font-size: 12px;
 }
@@ -248,21 +248,21 @@ h5 {
 
 /* Button Styling */
 .modal-body .btn.btn-primary {
-    background-color: #bdbbbd; /* Button background color */
-    border-color: #bdbbbd;
+    background-color: rgba(0, 136, 169, 0.8); /* Button background color */
+    border-color:  rgba(0, 136, 169, 1);
     color: #fff; /* Button text color */
     display: block;
     margin: 20px 0 auto;
     width: 200px;
     height: 35px;
-    border-radius: 30px;
+    border-radius: 16px;
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
 .modal-body .btn.btn-primary:hover {
-    background-color: #938f93; /* Darker color on hover */
+    background-color:  rgba(0, 136, 169, 1); /* Darker color on hover */
 }
 
 /* Overlay Styling */
