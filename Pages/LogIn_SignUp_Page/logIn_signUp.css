@@ -1,105 +1,48 @@
-/* Reset and basic styles */
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
-/* Main container styles */
+/* Custom styles for buttons */
+.custom-btn {
+    background-color: #997974 !important; /* Custom background color */
+    border-color: #997974 !important;     /* Custom border color */
+    color: #ffffff !important;            /* Custom text color */
+}
+
+/* Custom hover effects for buttons */
+.custom-btn:hover {
+    background-color: #5c5c5c !important; /* Custom background color on hover */
+    border-color: #5c5c5c !important;     /* Custom border color on hover */
+    color: #ffffff !important;            /* Ensure text color stays white on hover */
+}
+
+/* Resetting default body styles */
 main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background: -webkit-linear-gradient(left, #bdbbbd, #938f93);
-    padding-top: 40px;
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9; /* Setting background color */
 }
 
-/* Input and button styles */
-input,
-button {
-    border: none;
-    outline: none;
-    background: none;
+/* Form container styling */
+.form-container {
+    padding: 20px;
+    transition: all 0.5s ease-in-out; /* Smooth transition for form containers */
 }
 
-/* Form container styles */
-.cont {
-    overflow: hidden;
-    position: relative;
-    width: 900px;
-    height: 550px;
-    background: #fff;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-
-/* Form styles */
-.form {
-    position: relative;
-    width: 640px;
-    height: 100%;
-    padding: 50px 30px;
-    -webkit-transition: -webkit-transform 1.2s ease-in-out;
-    transition: -webkit-transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-}
-
-h2 {
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-}
-
-label {
-    display: block;
-    width: 260px;
-    margin: 25px auto 0;
-    text-align: center;
-}
-
-label span {
-    font-size: 14px;
-    font-weight: 600;
-    color: #505f75;
-    text-transform: uppercase;
-}
-
-input {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
-    font-size: 16px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
-    text-align: center;
-}
-
-.button_loginsignup {
-    display: block;
-    margin: 0 auto;
-    width: 260px;
-    height: 36px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 15px;
-    cursor: pointer;
-}
-
+/* Additional styles if needed */
 .submit {
     margin-top: 40px;
     margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: 600;
-    background-image: -webkit-linear-gradient(left, #bdbbbd, #938f93);
+    color: #938f93;
 }
 
 .submit:hover {
-    background: -webkit-linear-gradient(left, #bdbbbd, #938f93);
+    color: #bdbbbd;
 }
 
 .forgot-pass {
@@ -115,213 +58,120 @@ input {
     color: cornflowerblue;
 }
 
-.social-media {
-    display: block !important; /* Ensure social media buttons are always displayed */
+/* Styling for feature section */
+.features {
+    margin: 4em auto; /* Margin */
+    padding: 1em; /* Padding */
+    position: relative; /* Position */
 }
 
-.social-media ul {
-    list-style: none;
-    padding: 0;
+/* Styling for feature titles */
+.feature-title {
+    color: #333; /* Text color */
+    font-size: 1.3rem; /* Font size */
+    font-weight: 700; /* Font weight */
+    margin-bottom: 20px; /* Bottom margin */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Styling for feature images */
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Box shadow */
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Box shadow */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Box shadow */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Styling for form controls */
+.features .form-control,
+.features input {
+    border-radius: 0; /* Border radius */
+}
+
+/* Styling for buttons within features section */
+.features .btn {
+    background-color: #997974; /* Background color */
+    border: 1px solid #997974; /* Border */
+    color: #fff; /* Text color */
+}
+
+/* Hover effect for buttons within features section */
+.features .btn:hover {
+    background-color: #333; /* Background color on hover */
+    border: 1px solid #333; /* Border on hover */
+}
+
+h2 {
     text-align: center;
-}
-
-.social-media ul li {
-    margin: 10px 0;
-}
-
-.social-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    text-decoration: none;
-    color: inherit;
-    border: 2px solid;
-    border-radius: 8px;
-    width: 250px; /* Adjust the width as needed */
-    margin: 0 auto;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.social-btn img.social-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.social-btn span {
-    margin-left: 5px;
-}
-
-.social-btn.btn-outline-danger:hover {
-    background-color: #bdbbbd;
-    color: white;
-    border-color: #bdbbbd;
-}
-
-.social-btn.btn-outline-primary:hover {
-    background-color: #bdbbbd;
-    color: white;
-    border-color: #bdbbbd;
-}
-.sub-cont {
-    overflow: hidden;
-    position: absolute;
-    left: 640px;
-    top: 0;
-    width: 900px;
-    height: 100%;
-    padding-left: 260px;
-    background: #fff;
-    -webkit-transition: -webkit-transform 1.2s ease-in-out;
-    transition: -webkit-transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out;
-}
-.cont.s-signup .sub-cont {
-    -webkit-transform: translate3d(-640px, 0, 0);
-    transform: translate3d(-640px, 0, 0);
-}
-.img {
-    overflow: hidden;
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 260px;
-    height: 100%;
-    padding-top: 360px;
-}
-.img:before {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 900px;
-    height: 100%;
-    background-image: url('/Assets/dorm.jpg');
-    background-size: cover;
-    transition: -webkit-transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-}
-.img:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-}
-.cont.s-signup .img:before {
-    -webkit-transform: translate3d(640px, 0, 0);
-    transform: translate3d(640px, 0, 0);
-}
-.img-text {
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
-    color: #fff;
-    -webkit-transition: -webkit-transform 1.2s ease-in-out;
-    transition: -webkit-transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-}
-.img-text h2 {
+    color: #997974;
     margin-bottom: 10px;
+}
+
+small {
+    color: rgba(100, 100, 100, 0.7); /* Greyish color with opacity */
     font-weight: normal;
+    font-size: 12px;
 }
-.img-text p {
-    font-size: 14px;
-    line-height: 1.5;
+
+/* Login page */
+/*------------ Login container ------------*/
+
+.box-area {
+    width: 920px;
 }
-.cont.s-signup .img-text.m-up {
-    -webkit-transform: translateX(520px);
-    transform: translateX(520px);
+
+/*------------ Right box ------------*/
+
+.right-box {
+    padding: 40px 30px 40px 40px;
 }
-.img-text.m-in {
-    -webkit-transform: translateX(-520px);
-    transform: translateX(-520px);
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder {
+    font-size: 16px;
 }
-.cont.s-signup .img-text.m-in {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+
+.rounded-4 {
+    border-radius: 20px;
 }
-.sign-in {
-    padding-top: 65px;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-.cont.s-signup .sign-in {
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 1.2s;
-    transition-duration: 1.2s;
-    -webkit-transform: translate3d(640px, 0, 0);
-    transform: translate3d(640px, 0, 0);
-}
-.img-btn {
-    overflow: hidden;
-    z-index: 2;
-    position: relative;
-    width: 100px;
-    height: 36px;
-    margin: 0 auto;
-    background: transparent;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 15px;
-    cursor: pointer;
-}
-.img-btn:after {
-    content: '';
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #fff;
+
+.rounded-5 {
     border-radius: 30px;
 }
-.img-btn span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform 1.2s;
-    transition: -webkit-transform 1.2s;
-    transition: transform 1.2s;
-    transition: transform 1.2s, -webkit-transform 1.2s;
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 10px;
+    }
 }
-.img-btn span.m-in {
-    -webkit-transform: translateY(-72px);
-    transform: translateY(-72px);
-}
-.cont.s-signup .img-btn span.m-in {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-.cont.s-signup .img-btn span.m-up {
-    -webkit-transform: translateY(72px);
-    transform: translateY(72px);
-}
-.sign-up {
-    -webkit-transform: translate3d(-900px, 0, 0);
-    transform: translate3d(-900px, 0, 0);
-}
-.cont.s-signup .sign-up {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+/* Input and button styles */
+input, button {
+    border: none;
+    outline: none;
+    background: none;
 }
 
+/* Form styles */
+.form {
+    position: relative;
+    width: 700px;
+    height: 80%;
+    padding: 50px 30px;
+}
+
+/* Modal Styling for Forgot Password and Set New Password */
 h5 {
     display: block;
     font-size: 16px;
@@ -333,20 +183,52 @@ h5 {
     unicode-bidi: isolate;
 }
 
-/* Modal Styling */
 .modal {
+    display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: white;
-    width: 500px;
-    max-width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.close-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .modal .form-group{
@@ -357,26 +239,17 @@ h5 {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-header {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
 
 .modal-body small {
     color: #6c757d;
     font-size: 12px;
 }
 
-.modal-body {
-    padding: 30px 15px;
-}
 
 /* Button Styling */
 .modal-body .btn.btn-primary {
     background-color: #bdbbbd; /* Button background color */
+    border-color: #bdbbbd;
     color: #fff; /* Button text color */
     display: block;
     margin: 20px 0 auto;
@@ -394,18 +267,14 @@ h5 {
 
 /* Overlay Styling */
 #overlay {
+    display: none;
     position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 9;
 }
-
 #overlay.active {
     opacity: 1;
     pointer-events: all;

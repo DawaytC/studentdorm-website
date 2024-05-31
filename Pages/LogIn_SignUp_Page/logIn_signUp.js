@@ -1,46 +1,38 @@
-document.querySelector('.img-btn').addEventListener('click', function() {
-    // Toggle the signup process directly
-    document.querySelector('.cont').classList.toggle('s-signup');
-
-});
-
-// JavaScript to open and close modals
-function openResetPasswordModal() {
-    document.getElementById('forgotPasswordModal').classList.add('active');
-    const emailInput = document.getElementById('resetEmail');
-    emailInput.classList.remove('active');
-    document.getElementById('overlay').classList.add('active');
+// Function to handle opening and closing forms
+function toggleForm() {
+    var loginForm = document.getElementById('login-form');
+    var signUpForm = document.getElementById('signup-form');
+    if (loginForm.style.display === 'none') {
+        loginForm.style.display = 'block';
+        signUpForm.style.display = 'none';
+    } else {
+        loginForm.style.display = 'none';
+        signUpForm.style.display = 'block';
+    }
 }
 
-// Function to close the reset password modal
+// Function to open the reset password modal
+function openResetPasswordModal() {
+    document.getElementById('forgotPasswordModal').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+}
+
 function closeResetPasswordModal() {
-    document.getElementById('forgotPasswordModal').classList.remove('active');
-    document.getElementById('overlay').classList.remove('active');
+    document.getElementById('forgotPasswordModal').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
 }
 
 function openSetNewPasswordModal() {
-    const emailInput = document.getElementById('resetEmail');
-    // Check if the email field is empty
-    if (!emailInput.value.trim()) {
-        alert('Please fill in the email address first.');
-        return; // Exit the function if the email field is empty
-    }
-
-    const resetPasswordModal = document.getElementById('forgotPasswordModal');
-    resetPasswordModal.classList.remove('active');
-
-    const setNewPasswordModal = document.getElementById('setNewPasswordModal');
-    setNewPasswordModal.classList.add('active');
-
-    document.getElementById('overlay').classList.add('active'); // Add active class to overlay
+    document.getElementById('setNewPasswordModal').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
 }
 
 function closeSetNewPasswordModal() {
-    document.getElementById('setNewPasswordModal').classList.remove('active');
-    document.getElementById('overlay').classList.remove('active');
+    document.getElementById('setNewPasswordModal').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
 }
 
-// Event listener for reset password button click
+// Event listener for reset password form submission
 document.getElementById('resetPasswordForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -50,8 +42,11 @@ document.getElementById('resetPasswordForm').addEventListener('submit', function
         alert('Please fill in the email address.');
         return; // Exit the function if the email field is empty
     }
-
-    // If the email field is filled, open the set new password modal
+    // After successful send email, you can redirect the user to set new password window
+    alert('The reset password has been sent to your email.');
+    // Close the modal
+    closeResetPasswordModal();
+    // Optionally, open the set new password modal
     openSetNewPasswordModal();
 });
 
@@ -67,10 +62,22 @@ document.getElementById('newPasswordForm').addEventListener('submit', function(e
         return;
     }
 
+    if (newPasswordInput.value !== confirmNewPasswordInput.value) {
+        alert('Passwords do not match.');
+        return;
+    }
+
     // Here you can implement logic to set the new password
     // After successful password change, you can redirect the user or perform any other action
     alert('Password successfully changed!');
     // Close the modal
-    const setNewPasswordModal = document.getElementById('setNewPasswordModal');
-    closeModal(setNewPasswordModal);
+    closeSetNewPasswordModal();
+});
+
+// Function to handle overlay click event
+document.getElementById('overlay').addEventListener('click', function() {
+    // Close the reset password modal if it's open
+    closeResetPasswordModal();
+    // Close the set new password modal if it's open
+    closeSetNewPasswordModal();
 });
