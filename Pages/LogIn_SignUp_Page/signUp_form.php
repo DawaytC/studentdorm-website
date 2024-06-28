@@ -22,6 +22,12 @@ if (isset($_POST['submit'])) {
     $pass = $_POST['password'];
     $cpass = $_POST['cpassword'];
 
+    // Function to validate password strength
+    function validate_password($password) {
+        $pattern = '/^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/';
+        return preg_match($pattern, $password);
+    }
+
     // Check if the user already exists
     $select = $conn->prepare("SELECT * FROM users WHERE email = ?");
     $select->bind_param("s", $email);
@@ -33,6 +39,8 @@ if (isset($_POST['submit'])) {
     } else {
         if ($pass != $cpass) {
             echo '<script>alert("Passwords do not match!"); window.location.href="signUp.php";</script>';
+        } else if (!validate_password($pass)) {
+            echo '<script>alert("Password must be at least 8 characters long and include at least one uppercase letter, one digit, and one special character."); window.location.href="signUp.php";</script>';
         } else {
             // Hash the password
             $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);

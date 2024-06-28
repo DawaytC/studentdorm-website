@@ -51,6 +51,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <input type="password" name="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
+                            <small class="form-text text-muted">Password must be at least 8 characters long, contain at least one uppercase letter, one digit, and one special character.</small>
                         </div>
                         <div class="input-group mb-3">
                             <input type="password" name="cpassword" class="form-control form-control-lg bg-light fs-6" placeholder="Confirm Password" required>
@@ -67,7 +68,6 @@
             </div>
         </div>
     </div>
-
 </main>
 
 <!-- =============== EDIT: YOUR OWN LOCAL JS =============== -->
